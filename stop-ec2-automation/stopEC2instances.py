@@ -23,3 +23,15 @@ def lambda_handler(event, context):
         for instance in instances:
             instance.stop()
             print('Stopped instance: ', instance.id)
+
+
+        #if you want to start instance use below
+        #Get only running instances
+        # instances = ec2.instances.filter(
+        #     Filters=[{'Name': 'instance-state-name',
+        #     'Values': ['stopped']}])
+
+        # #Start the instances
+        # for instance in instances:
+        #     instance.start()
+        #     print('Stopped instance: ', instance.id)
