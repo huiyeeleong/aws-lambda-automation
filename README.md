@@ -41,7 +41,7 @@ Check if AWS credentials configure appropriately
 
 e.g To check s3 bucket using Python Boto3 interpreter:
 >>> import boto3
->>> s3 = bot3.resource
+>>> s3 = boto3.resource
 >>> for bucket in s3.buckets.all():
 >>> print(bucket.name)
 
