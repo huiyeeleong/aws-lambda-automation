@@ -10,4 +10,6 @@ Deregistering an old ami with Lambda in AWS
 
 5. If you need to setup the cron job to stop the instance please use AWS EventBridge.
 
-6. Same procedue for deleting snapshot.
+Example Output:
+![image](https://user-images.githubusercontent.com/66815986/136634189-135f14b5-132a-4141-9d9d-0b7d6bf7b02f.png)
+
