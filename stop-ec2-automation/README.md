@@ -11,3 +11,4 @@ Stop an EC2 Instance with Lambda in AWS
 5. If you need to setup the cron job to stop the instance please use AWS EventBridge
 
 
+![Screen Shot 2021-10-08 at 8 53 38 am](https://user-images.githubusercontent.com/66815986/136484040-2d32f6e6-3df2-425b-9b07-dd0666039b66.png)
