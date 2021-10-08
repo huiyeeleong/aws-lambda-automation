@@ -14,3 +14,7 @@ Delete unattached EBS volume with Lambda in AWS
 4. Run a test for the Lambda function.
 
 5. If you need to setup the cron job to stop the instance please use AWS EventBridge.
+
+Example Output:
+![image](https://user-images.githubusercontent.com/66815986/136632603-8b5c4b10-c511-4014-9479-e105ed84b004.png)
+
