@@ -4,7 +4,7 @@
         {
             "Effect": "Allow",
             "Action": "logs:CreateLogGroup",
-            "Resource": "arn:aws:logs:ap-southeast-2:673569942958:*"
+            "Resource": "arn:aws:logs:ap-southeast-2:ACCOUNT-ID:*"
         },
         {
             "Effect": "Allow",
@@ -13,7 +13,7 @@
                 "logs:PutLogEvents"
             ],
             "Resource": [
-                "arn:aws:logs:ap-southeast-2:673569942958:log-group:/aws/lambda/stopEC2instances-hui:*"
+                "arn:aws:logs:ap-southeast-2:ACCOUNT-ID:log-group:/aws/lambda/stopEC2instances-hui:*"
             ]
         },
         {
