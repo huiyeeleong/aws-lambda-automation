@@ -25,11 +25,15 @@ def lambda_handler(event, context):
             creation_date = ami['CreationDate']
             age_days = days_old(creation_date)
             image_id = ami['ImageId']
+            print('ImageId: {}, CreationDate: {} ({} days old)'.format(
+                image_id, creation_date, age_days))
             
-            
-            #Deregistering AMI
+            #If AMI age is more than 100 days old
             if age_days >= 100:
                 print('Deleting ImageId: ', image_id)
+                
+                #Deregister the AMI
+                ec2.deregister_image(ImageId=image_id)
                 
                 
                 
