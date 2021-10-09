@@ -29,8 +29,7 @@ def lambda_handler(event,context):
                 ec2.delete_snapshot(SnapshotId=id)
             
             except Exception as e:
-                if 'InvalidSnapshot.InUse' in e.message:
-                    print("Snapshot {} in use, skipping.".format(id))
-                    continue
+                print("Snapshot {} in use, skipping.".format(id))
+                continue
                 
     
